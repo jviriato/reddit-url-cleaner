@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit URL Cleaner",
+  "version": "1.0",
+  "description": "Automatically removes ?tl=<LANGUAGE> query parameter from Reddit URLs",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "*://*.reddit.com/*"
+  ],
+  "background": {
+    "scripts": ["browser-polyfill.js", "background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit-url-cleaner@example.com",
+      "strict_min_version": "57.0"
+    }
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
